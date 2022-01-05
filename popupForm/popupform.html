@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Estonia&family=Montserrat+Alternates:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openForm(){
+            document.getElementById("login").style.display="block";
+        }
+        function closeForm(){
+            document.getElementById("login").style.display="none";
+        }
+        function openSign(){
+            document.getElementById("Sign").style.display="block";
+        }
+        function closeSign(){
+            document.getElementById("Sign").style.display="none";
+        }
+        function refresh(){
+              window.location.reload("Refresh");
+            }
+    </script>
+</head>
+<body>
+    <div class="head">
+    <button type="open-button" value="LOGIN" id="open" onclick="openForm()">LOGIN</button>
+    <button type="open-button" value="Sign Up" id="on" onclick="openSign()">Sign Up</button>
+    <h1 style="text-align: center; color: rgba(255,255,255,.3);
+    text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);">WELCOME TO MATRIX</h1>
+    <div class="re" onclick="refresh()">
+        <i class="fas fa-redo"></i>
+    </div>
+
+    <div class="re1" onclick="document.getElementById('card11').style.display='block'">
+        <i class="fas fa-id-card"></i>
+    </div>
+    </div>
+    
+
+    <div class="wrapper">
+        <img src="backround.jpg" alt="backround">
+        <div class="lab1" id="login">
+                <div class="icon1" id="icon"><i class="lni lni-react"></i></div><br>
+
+                    <form action="post">
+                        <div>
+                        <input type="text" name="user" placeholder="Enter User Name" id="uname"><br>
+                        </div><br>
+                        <div>
+                        <input type="text" name="password" placeholder="Enter Password" id="pass"><br>
+                        </div><br>
+                            <button type="submit" value="Login" id="submit" > Login </button>
+                            <button type="close" value="X" id="close" onclick="closeform()">X</button>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="lab2" id="Sign">
+            <div class="icon1" id="icon"><i class="lni lni-react"></i></div><br>
+            <div class="sign">
+                <form action="" method="post">
+                    <input type="text" name="fname" id="r1" placeholder="First Name"><br>
+                    <input type="text" name="Mname" id="r2" placeholder="Middle Name"><br>
+                    <input type="text" name="lname" id="r3" placeholder="Last Name"><br>
+                    <input type="text" name="Uname" id="r4" placeholder="User Name"><br>
+                    <input type="text" name="password" id="r5" placeholder="Password"><br>
+                    <input type="text" name="cpassword" id="r6" placeholder="Confirm Password"><br>
+                    <input type="text" name="mobile number" id="r7" placeholder="Mobile Number"><br>
+                    <input type="text" name="email" id="r8" placeholder="Email Id"><br>
+                    <br>
+                    <button type="submit" value="submit" id="but">Sign Up</button>
+                    <button type="close" value="X" id="off" onclick="closeSign()">X</button>
+                </form>
+            </div>
+            
+        </div>
+</body>
+</html>
