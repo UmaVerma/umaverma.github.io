@@ -1,0 +1,1085 @@
+*{
+    margin: 0%; padding: 0%; display: block;
+}
+.fl{float: left;} 
+.fr{ float: right;} 
+.new{float: right; float: left;}
+.wrapper{
+    width: 100%;
+    height: 99.5vh;
+    background-color: rgba(3, 241, 142, 0.562);
+}
+.head{
+    width: 100%; height: 17.5vh; background-color: rgba(0, 0, 0, 0.295); display: flex; flex-wrap: wrap;
+}
+.cname{
+    width: 30%;
+    height: 100%;
+    text-align: center;
+}
+.menu{
+    width: 70%;
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.head .cname .logo{
+    font-size: 3em;
+    color: rgb(225, 174, 65);
+    text-shadow: 0px 1px 0px black;
+
+}
+.cname i{
+    font-size: 3em;
+    text-shadow: 0px 1px 0px black;
+    color: rgb(225, 174, 65);
+    margin-top: 20px;
+}
+.menu .color{
+    width: 25%;
+    height: 80px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.menu .line{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.line .c1{
+    width: 16.50%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+
+.line .c2{
+    width: 16.50%;
+    height: 100%;
+    background-color:blue;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+.line .c3{
+    width: 16.50%;
+    height: 100%;
+    background-color: dodgerblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+.line .c4{
+    width: 16.50%;
+    height: 100%;
+    background-color: tomato;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+.line .c5{
+    width: 16.50%;
+    height: 100%;
+    background-color: magenta;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+.line .c6{
+    width: 16.50%;
+    height: 100%;
+    background-color: maroon;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+
+
+
+.line .c7{
+    width: 16.50%;
+    height: 100%;
+    background-color: red;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}   .line .c8{
+    width: 16.50%;
+    height: 100%;
+    background-color: yellow;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}   .line .c9{
+    width: 16.50%;
+    height: 100%;
+    background-color: green;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}   .line .c10{
+    width: 16.50%;
+    height: 100%;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}   .line .c11{
+    width: 16.50%;
+    height: 100%;
+    background-color: slateblue;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}   .line .c12{
+    width: 16.50%;
+    height: 100%;
+    background-color: hotpink;
+    border: 1px solid white;
+    box-sizing: border-box;
+
+}
+
+.line .c1:hover{
+   
+ border: 1px solid black;
+ cursor: pointer;
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ 
+
+}.line .c2:hover{
+   
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c3:hover{
+   
+ cursor: pointer;
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c4:hover{
+   
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c5:hover{
+   
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c6:hover{
+   
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c7:hover{
+   
+ cursor: pointer;
+ border: 1px solid black;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c8:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ border: 1px solid black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line .c9:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ border: 1px solid black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line .c10:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ border: 1px solid black;
+ box-shadow: 0px 0px 10px black;
+
+  }.line .c11:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ border: 1px solid black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line .c12:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ border: 2px solid black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }
+
+  .menu .textcolor{
+      width: 35%;
+      height: 80%;
+      margin-top: 10px;
+      margin-left: 10px;
+      background-color: rgba(0, 0, 0, 0.884);
+     
+  }
+  .pre{
+      color: black;
+      font-size: 18px;
+      
+  }
+.menu .line1{
+   height: 50%;
+   width:100%;
+display: flex;
+flex-wrap: wrap;
+   }
+   .text11{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+.text11 i{
+    color: red;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text12{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text12 i{
+    color: blue;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text13{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text13 i{
+    color: green;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text14{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text14 i{
+    color: whitesmoke;
+    font-size: 30px;
+    text-shadow: 1px 0px 1px black;
+    margin-top: 5px;
+ 
+}
+.text15{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text15 i{
+    color: yellow;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text16{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text16 i{
+    color: royalblue;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+
+.text17{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text17 i{
+    color: magenta;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text18{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text18 i{
+    color: tomato;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text19{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text19 i{
+    color: skyblue;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text20{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text20 i{
+    color: goldenrod;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text21{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text21 i{
+    color: hotpink;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text22{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text22 i{
+    color: lightseagreen;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text23{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text23 i{
+    color: lime;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text24{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text24 i{
+    color: darkmagenta;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text25{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text25 i{
+    color: lightcoral;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text26{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text26 i{
+    color: darkolivegreen;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text27{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text27 i{
+    color: darkviolet;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text28{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text28 i{
+    color: midnightblue;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text29{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text29 i{
+    color: rebeccapurple;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text30{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+
+
+.text30 i{
+    color: navy;
+    font-size: 30px;
+    margin-top: 5px;
+ 
+}
+.text11:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black;
+    cursor: grab;
+}
+.text12:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text13:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text14:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text15:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text16:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text17:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text18:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text19:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} .text20:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+} 
+
+.text21:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text22:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text23:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text24:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text25:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text26:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text27:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text28:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text29:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}.text30:hover{
+    box-shadow: 0px 0px 10px black;
+    border: 1px solid black; cursor: grab;
+}
+.styles{
+    width: 10%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 5px;
+
+}
+.s1{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s1 .bold{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.bold:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+.italic:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.bold i{
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: black;
+
+}
+
+.s1 .italic{
+    width: 50%;
+    height: 100%;
+    text-align: center; 
+    box-sizing: border-box;
+}
+.italic i{
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: black;
+
+}
+.s1 .UP{
+    width: 50%;
+    height: 100%;
+    text-align: center; 
+    box-sizing: border-box;
+}
+.UP i{
+    font-size: 1.8em;
+    margin-top: 6px;
+    color: black;
+
+}
+
+.UP:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+
+
+.s1 .LOw{
+    width: 50%;
+    height: 100%;
+    text-align: center; 
+    box-sizing: border-box;
+}
+.LOw i{
+    font-size: 1.3em;
+    margin-top: 8px;
+    color: black;
+
+}
+
+.LOw:hover{
+    box-shadow: 0px 0px 10px black;
+}
+.shadow{
+    width: 25%;
+    height: 80%;
+    margin-left: 10px;
+    margin-top:  10px;
+
+}
+
+
+
+
+
+.shadow .line20{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.line20 .c11{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid black;
+    box-sizing: border-box;
+
+}
+
+.line20 .c22{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid blue;
+    box-sizing: border-box;
+
+}
+.line20 .c33{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid dodgerblue;
+    box-sizing: border-box;
+
+}
+.line20 .c44{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid tomato;
+    box-sizing: border-box;
+
+}
+.line20 .c55{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid magenta;
+    box-sizing: border-box;
+
+}
+.line20 .c66{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid maroon;
+    box-sizing: border-box;
+
+}
+
+
+
+.line20 .c77{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid red;
+    box-sizing: border-box;
+
+}   .line20 .c88{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid yellow;
+    box-sizing: border-box;
+
+}   .line20 .c99{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid green;
+    box-sizing: border-box;
+
+}   .line20 .c1010{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid gray;
+    box-sizing: border-box;
+
+}   .line20 .c1111{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid slateblue;
+    box-sizing: border-box;
+
+}   .line20 .c1212{
+    width: 16.50%;
+    height: 100%;
+    border: 5px solid hotpink;
+    box-sizing: border-box;
+
+}
+
+.line20 .c11:hover{
+   
+ cursor: pointer;
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ 
+
+}.line20 .c22:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c33:hover{
+   
+ cursor: pointer;
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c44:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c55:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c66:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c77:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c88:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line20 .c99:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line20 .c1010:hover{
+   
+ cursor: pointer;
+ transition: 0.50s;
+ box-shadow: 0px 0px 10px black;
+
+  }.line20 .c1111:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }.line20 .c1212:hover{
+   
+ box-shadow: 0px 0px 10px black;
+ transition: 0.50s;
+ cursor: pointer;
+
+  }
+
+.bar2{
+    position: absolute;
+    right: 70%;
+    top: 10%;
+    width: 23%;
+    height: 77vh;
+    margin:5%;
+    
+}
+.sidebar{
+    width: 45%;
+    height: 90%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.sidebar  button{
+    width: 100%;
+    height: 6%;
+    font-size: 15px;
+    border: none;
+    color: gold;
+    border-radius:40%;
+    margin: 5%;
+}
+.sidebar  button:hover{
+    
+  box-shadow: 0px 0px 10px 3px rgb(20, 20, 20);
+  color: rgb(14, 13, 13);
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.sidebar1{
+    width: 45%;
+    height: 90%;
+    text-align: center;
+    position: absolute;
+    left: 49%;
+    bottom: 8%;
+}
+
+.sidebar1  button{
+    width: 100%;
+    height: 6%;
+    font-size: 15px;
+    border: none;
+    color: gold;
+    border-radius:40%;
+    margin: 5%;
+}
+.sidebar1  button:hover{
+    box-shadow: 0px 0px 10px 3px rgb(20, 20, 20);
+  color: rgb(14, 13, 13);
+  background-color: rgba(0, 0, 0, 0.11);
+}
+.bar{
+    width: 47%;
+    height: 77vh;
+    background-color: rgb(248, 246, 246);
+    position: absolute;
+    top: 20.5%;
+    left: 27%;
+}
+.card{
+    width: 450px;
+    height: 30vh;
+    margin: auto;
+    margin-top: 20%;
+    padding: auto;
+    background: rgb(243, 224, 200);
+    border-block: 10px black;
+    display: none;
+    
+}
+.left{
+    width: 32%;
+    height: 25vh;
+    margin: auto;
+    margin-top: 2%; margin-left: 2%;
+    background: cornsilk;
+}
+.right{
+    width: 50%;
+    height: 25vh;
+    text-align: center;
+
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.icon{
+    width: 100%;
+    height: 3vh;
+    margin:auto;
+    text-align: center;
+    font-weight: bold;
+}
+.re{
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    text-align: center;
+    position: fixed;
+    left: 30%;
+    bottom: 10%;
+
+}
+.re i{
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+.re:hover{
+box-shadow: 0px 0px 10px black;
+cursor: pointer;
+}
+
+
+.re1{
+    width:60px;
+    height: 60px;
+    border: 1px solid blue;
+    text-align: center;
+    position: fixed;
+    left: 65%;
+    bottom: 10%;
+
+}
+.re1 i{
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+.re1:hover{
+box-shadow: 0px 0px 10px black;
+cursor: pointer;
+}
+.bar3{
+    position: absolute;
+    left: 70%;
+    top: 11%;
+    width: 24%;
+    height: 77vh;
+    margin:5%;
+}
+.sidebar2{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 1%;
+    left: 9%;
+    text-align: center;
+
+}
+
+
+
+.sidebar2  button{
+    width: 100%;
+    height: 6%;
+    font-size: 15px;
+    border: none;
+    color: gold;
+    border-radius:40%;
+    margin: 5%;
+}
+.sidebar2  button:hover{
+    box-shadow: 0px 0px 10px 3px rgb(20, 20, 20);
+  color: rgb(14, 13, 13);
+  background-color: rgba(0, 0, 0, 0.11)
+}
+.sidebar3{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    top: 1%;
+    right: 3%;
+    text-align: center;
+
+}
+
+
+
+
+h3{
+    font-size: 20px;
+    color: gold;
+}
+
+
+.sidebar3  button{
+    width: 100%;
+    height: 6%;
+    font-size: 15px;
+    border: none;
+    color: gold;
+    border-radius:40%;
+    margin: 5%;
+}
+.sidebar3  button:hover{
+    box-shadow: 0px 0px 10px 3px rgb(20, 20, 20);
+  color: rgb(14, 13, 13);
+  background-color: rgba(0, 0, 0, 0.11)
+}
