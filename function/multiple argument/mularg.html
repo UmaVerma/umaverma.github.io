@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 20%;
+            height: 150px;
+            background-color: aqua;
+            float: left;
+            margin: 2%;
+            padding: 2%;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function card(name,profile){
+            document.write(
+                `<div>
+                    <h3>Visiting Card</h3>
+                    <p1>Nmae : ${name}</p1>
+                    <br>
+                    <p2>Profile : ${profile}</p2>
+                </div>`
+            )
+        }
+        card("Uma","web");
+        card("surya","design");
+        card("verma","html");
+        card("shankar","dot");
+    </script>
+</body>
+</html>
