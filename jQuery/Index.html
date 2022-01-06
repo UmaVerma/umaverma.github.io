@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        h1{
+            width: 20%;
+            height: 4rem;
+            background-color: black;
+            color: red;
+            text-align: center;
+            padding: 1%;
+            float: left;
+            margin: 1%;
+            cursor: default;
+        }
+
+        button{
+            width: 7%;
+            float: right;
+            margin: 1%;
+            background-color: seagreen;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="h">this is heading 1</h1>
+    <h1>this is heading 2</h1>
+    <h1 class="h">this is heading 3</h1>
+    <h1>this is heading 4</h1>
+    <h1 class="h">this is heading 5</h1>
+    <h1>this is heading 6</h1>
+
+    <button id="sa">Show All</button>
+    <button id="ha">Hide All</button>
+    <button id="hs">Hide 1,3,5</button>
+
+    <!-- <script src="jquery-3.6.0.min.js"></script> -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+    <script>
+    $(document).ready(function(){
+        $("h1").click(function(){
+            $(this).hide();
+        })
+        $("#sa").click(function(){
+            $("h1").show();
+        })
+        $("#ha").click(function(){
+            $("h1").hide();
+        })
+        $("#hs").click(function(){
+            $(".h").hide();
+        })
+    })
+    </script>
+</body>
+</html>
