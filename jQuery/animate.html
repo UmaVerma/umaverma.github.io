@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            cursor: default;
+        }
+        .head{
+            background-color: brown;
+            padding: 2%;
+        }
+        .head h1{
+            text-align: left;
+        }
+        .navbody{
+            width: 15%;
+            height: 5rem;
+            margin: 3%;
+            /*padding:2%;*/
+            background-color: burlywood;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Show Animation</h1>
+    </div>
+
+    <div class="navbody">
+        <h2>
+            This is Example
+        </h2>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $("h1").click(function(){
+              //$(".navbody").animate({right : '400px'});
+              /*$(".navbody").animate(
+                  {right : '400px',opacity: '0.6',height:'10rem',width:'25%'}
+              );*/
+              /*$(".navbody").animate(
+                  {left : '400px',height:'+=10rem',width:'+=25%'}
+              );*/
+              /*var navbody = $(".navbody");
+              navbody.animate({height: '10rem', opacity: '0.6'}, "slow");
+              navbody.animate({width: '400px', opacity: '0.9'}, "slow");
+              navbody.animate({height: 'rem', opacity: '0.6'}, "slow");
+              navbody.animate({width: '100px', opacity: '0.9'}, "slow");*/
+              var navbody = $(".navbody");  
+              navbody.animate({left: '200px'}, "slow");
+              navbody.animate({height: '250px'}, "slow");
+              navbody.animate({width: '300px'}, "slow");
+              navbody.animate({fontSize: '3em'}, "slow");
+              
+          });
+      });
+      
+  </script>
+
+</body>
+</html>
