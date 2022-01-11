@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jq Html</title>
+</head>
+<body>
+    <div class="card">
+    <h1> Welcome To Jquery Html </h1>
+    <hr>
+    <h2> Click !! </h2>
+    </div>
+    <hr>
+    <button id="ghtml">Show html</button>
+    <button id="gtext">Show text</button>
+    <hr>
+    <input type="text" id="data1">
+    <input type="text" id="data2">
+    <br>
+    <hr>
+    <button id="add"> + </button>
+    <button id="sub"> - </button>
+    <button id="mul"> * </button>
+    <button id="divide"> / </button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("h1").hide();
+            $("h2").click(function () {
+                $("h1").show();
+            });
+
+            $("#ghtml").click(function(){
+                alert($(".card").html())
+            })
+
+            $("#ghtml").click(function(){
+                alert($(".card").text())
+            })
+
+            val=0;
+            $("#add").click(function(){
+                var a = parseInt($("#data1").val());
+                var b = parseInt($("#data2").val());
+                var c = a+b;
+                console.log(c);
+            })
+
+            val=0;
+            $("#sub").click(function(){
+                var a = parseInt($("#data1").val());
+                var b = parseInt($("#data2").val());
+                var c = a-b;
+                console.log(c);
+            })
+
+            val=0;
+            $("#mul").click(function(){
+                var a = parseInt($("#data1").val());
+                var b = parseInt($("#data2").val());
+                var c = a*b;
+                console.log(c);
+            })
+
+            val=0;
+            $("#divide").click(function(){
+                var a = parseInt($("#data1").val());
+                var b = parseInt($("#data2").val());
+                var c = a/b;
+                console.log(c);
+            })
+        });
+
+        /*
+        Get Content - text(), html(), and val()
+        Three simple, but useful, jQuery methods for DOM manipulation are:
+
+        --->text() - Sets or returns the text content of selected elements
+        --->html() - Sets or returns the content of selected elements (including HTML markup)
+        --->val() - Sets or returns the value of form fields
+        */
+    </script>
+</body>
+</html>
