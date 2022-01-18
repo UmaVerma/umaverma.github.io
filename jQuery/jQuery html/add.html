@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add</title>
+</head>
+<body>
+<!-- append() - Inserts content at the end of the selected elements
+prepend() - Inserts content at the beginning of the selected elements
+after() - Inserts content after the selected elements
+before() - Inserts content before the selected elements -->
+
+
+<hr>
+append()
+<hr>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<ol>
+  <li>List item 1</li>
+  <li>List item 2</li>
+  <li>List item 3</li>
+</ol>
+
+<button id="btn1">Append text</button>
+<button id="btn2">Append list items</button>
+
+<hr>
+Prepended()
+<hr>
+
+<button id="btn3">Prepended text</button>
+<button id="btn4">Prepended list items</button>
+
+<br><br><br>
+
+<hr>
+<br>
+Add Several New Elements With append() and prepend()
+<br><br>
+<hr>
+<p1>This is a paragraph.</p1>
+<button onclick="appendText()">Append text</button>
+
+<br><br>
+<hr>
+<!-- The jQuery after() method inserts content AFTER the selected HTML elements.
+The jQuery before() method inserts content BEFORE the selected HTML elements. -->
+after() and before()
+<br><br>
+<hr>
+<br><br>
+
+<img src="https://images.unsplash.com/photo-1558459654-c430be5b0a44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="jQuery" width="100" height="140" margin="1%"><br><br>
+
+<button id="btn4">Insert before</button>
+<button id="btn5">Insert after</button>
+<br><hr>
+<p2>Click the button to insert text after the image via Several New Elements With after() and before().</p2>
+<br>
+
+<button onclick="afterText()">Insert after</button>
+
+<hr>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("p").append(" <b>Appended text</b>.");
+  });
+
+  $("#btn2").click(function(){
+    $("ol").append("<li>Appended item</li>");
+  });
+
+  $("#btn3").click(function(){
+    $("p").prepend("<b>Prepended text</b>. ");
+  });
+  
+  $("#btn4").click(function(){
+    $("ol").prepend("<li>Prepended item</li>");
+  });
+
+  $("#btn4").click(function(){
+    $("img").before("<i>Before</i>");
+  });
+
+  $("#btn5").click(function(){
+    $("img").after("<i>After</i>");
+  });
+});
+</script>
+<script>
+    function appendText() {
+      var txt1 = "<p>Text --> Create text with HTML.</p>";  
+      var txt2 = $("<p></p>").text("Text --> Create text with jQuery."); 
+      var txt3 = document.createElement("p");
+      txt3.innerHTML = "Text --> Create text with DOM.";        
+      $("body").append(txt1, txt2, txt3);   // Append new elements
+    }
+    </script>
+
+<script>
+    function afterText() {
+      var txt1 = "<b>I </b>";           // Create element with HTML
+      var txt2 = $("<i></i>").text("love ");  // Create with jQuery
+      var txt3 = document.createElement("b");   // Create with DOM
+      txt3.innerHTML = "jQuery!";
+      $("img").after(txt1, txt2, txt3);    // Insert new elements after img
+    }
+    </script>
+</body>
+</html>
