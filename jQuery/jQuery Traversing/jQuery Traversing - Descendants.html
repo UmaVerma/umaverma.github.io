@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Traversing - Descendants</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .descendants * { 
+          display: block;
+          border: 2px solid lightgrey;
+          color: lightgrey;
+          padding: 5px;
+          margin: 15px;
+        }
+        </style>
+</head>
+<body>
+<!-- Two useful jQuery methods for traversing down the DOM tree are:
+children()
+find() -->
+
+<div class="descendants" style="width:500px;">div (current element) 
+    <p class="first">p (child)
+      <span>span (grandchild)</span>   
+    </p>
+    <p class="second">p (child)
+      <span>span (grandchild)</span>
+    </p> 
+  </div>
+
+  <button id="btn1">click children</button>
+  <button id="btn2">click filtered children</button>
+  <button id="btn3">click find metod()</button>
+  <button id="btn4">returns all descendants</button>
+
+  <script>
+    $(document).ready(function(){
+      $("#btn1").click(function(){$("div").children().css({"color": "red", "border": "2px solid red"})});
+
+      $("#btn2").click(function(){$("div").children("p.first").css({"color": "red", "border": "2px solid green"})});
+
+      $("#btn3").click(function(){$("div").find("span").css({"color": "red", "border": "2px solid blue"})});
+
+      $("#btn4").click(function(){$("div").find("*").css({"color": "red", "border": "2px solid red"})});
+    });
+    </script>
+</body>
+</html>
