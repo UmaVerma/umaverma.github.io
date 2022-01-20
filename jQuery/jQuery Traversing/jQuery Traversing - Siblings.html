@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Traversing - Siblings</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .siblings * {
+      display: block;
+      border: 2px solid lightgrey;
+      color: lightgrey;
+      padding: 5px;
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- siblings()
+next()
+nextAll()
+nextUntil()
+prev()
+prevAll()
+prevUntil() -->
+  <div class="siblings">
+
+    <div>div (parent)
+      <p>p</p>
+      <span>span</span>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      <p>p</p>
+    </div>
+  </div>
+
+  <button id="btn1">siblings</button>
+  <button id="btn2">filtered siblings</button>
+  <button id="btn3">next to h2 sibling</button>
+  <button id="btn4">next to h2 all siblings</button>
+  <button id="btn5">nextUntill h2 to h6 siblings</button>
+
+  <p>jQuery prev(), prevAll() & prevUntil() Methods
+    The prev(), prevAll() and prevUntil() --> methods work just like the methods above but with reverse functionality: they
+    return previous sibling elements (traverse backwards along sibling elements in the DOM tree, instead of forward).
+  </p>
+  <script>
+    $(document).ready(function () {
+      $("#btn1").click(function () { $("h2").siblings().css({ "color": "red", "border": "2px solid red" }) });
+
+      $("#btn2").click(function () { $("h2").siblings("p").css({ "color": "red", "border": "2px solid blue" }) });
+
+      $("#btn3").click(function () { $("h2").next().css({ "color": "red", "border": "2px solid green" }) });
+
+      $("#btn4").click(function () { $("h2").nextAll().css({ "color": "red", "border": "2px solid orange" }) });
+
+      $("#btn5").click(function () { $("h2").nextUntil("h6").css({ "color": "red", "border": "2px solid brown" }) });
+    });
+  </script>
+</body>
+
+</html>
