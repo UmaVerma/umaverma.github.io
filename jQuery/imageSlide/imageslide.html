@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgslide</title>
+    <link rel="stylesheet" href="imgslide.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="head"> THE PICTURE SLIDE COMPANY</div>
+        <header>
+            <div id="slider">
+                <ul class="slides">
+                    <li class="slide"><img src="pic1.jpg" /></li>
+                    <li class="slide"><img src="city5.jpg" /></li>
+                    <li class="slide"><img src="city4.jpg" /></li>
+                    <li class="slide"><img src="city7.jpg" /></li>
+                    <li class="slide"><img src="city5.jpg" /></li>
+                    <li class="slide"><img src="city3.jpg" /></li>
+
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="para">
+        <h1>SLIDE PICTURE</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus unde error hic amet quidem
+            voluptate maxime ipsum, incidunt soluta at iste repudiandae vero magnam sapiente minus fugit, ipsam
+            voluptatem inventore esse nam deserunt! Sapiente eveniet ipsum facilis, aperiam dolore, assumenda temporibus
+            quod itaque accusantium minima praesentium repellendus nesciunt, cupiditate architecto! Commodi repellendus
+            quas totam aperiam voluptate at aspernatur ex tenetur. Odit vero iste illum autem beatae eveniet aliquam
+            perspiciatis, impedit accusantium ipsum in! Molestias sed et nulla eaque voluptas quibusdam amet deleniti
+            quidem, id aliquid tempora fugiat fugit voluptatum, autem cum quo numquam hic, error odio sunt facilis animi
+            voluptate. Impedit, accusantium! Expedita officiis repudiandae adipisci deleniti, enim ad quam sit ab
+            repellendus consequatur cupiditate suscipit iusto iste blanditiis perferendis vero magni quae totam numquam
+            porro unde reprehenderit atque earum? Earum ea, quam laboriosam ipsam, magnam itaque fugit soluta vero
+            expedita accusantium consequuntur, aliquam est consectetur numquam eius. Velit obcaecati, ratione iste
+            dolorem nulla vel voluptas atque qui incidunt ab reprehenderit, blanditiis temporibus perspiciatis est
+            molestiae harum soluta quod praesentium itaque facilis iure magni at eligendi exercitationem. Aliquam
+            exercitationem pariatur in doloremque quasi maxime, harum dolorum praesentium et corporis commodi,
+            repudiandae recusandae quae perferendis eius. Necessitatibus, iure voluptatem.</p>
+    </div>
+
+    <script>
+        $(function () {  
+            var width = 900;
+            var animationSpeed = 1800;
+            var pause = 3000;
+            var currentSlide = 1;
+          
+            var $slider = $('#slider');
+            var $sliderAnimation = $slider.find('.slides');
+            var $slides = $sliderAnimation.find('.slide');
+
+            setInterval(function () {
+                $sliderAnimation.animate({ 'margin-left': '-=' + width }, animationSpeed, function () {
+                    currentSlide++;
+                    if (currentSlide === $slides.length) {
+                        $sliderAnimation.css('margin-left', 0);
+                        currentSlide = 1;
+                    }
+                });
+            }, pause);
+        });  
+    </script>
+</body>
+
+</html>
