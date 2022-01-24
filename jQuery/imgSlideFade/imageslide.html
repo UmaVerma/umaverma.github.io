@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgslide</title>
+    <link rel="stylesheet" href="imgslide.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="head"> THE PICTURE SLIDE COMPANY</div>
+        <header>
+            <div id="slider">
+                <ul class="slides">
+                    <li id="slide1"><img src="pic1.jpg" /></li>
+                    <li id="slide2"><img src="city5.jpg" /></li>
+                    <li id="slide3"><img src="city4.jpg" /></li>
+                    <li id="slide4"><img src="city7.jpg" /></li>
+                    <li id="slide5"><img src="city5.jpg" /></li>
+                    <li id="slide6"><img src="city3.jpg" /></li>
+
+                </ul>
+                <div class="circle">
+                    <button id="btn1"></button>
+                    <button id="btn2"></button>
+                    <button id="btn3"></button>
+                    <button id="btn4"></button>
+                    <button id="btn5"></button>
+                    <button id="btn6"></button>
+                  </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="para">
+        <h1>SLIDE PICTURE</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus delectus unde error hic amet quidem
+            voluptate maxime ipsum, incidunt soluta at iste repudiandae vero magnam sapiente minus fugit, ipsam
+            voluptatem inventore esse nam deserunt! Sapiente eveniet ipsum facilis, aperiam dolore, assumenda temporibus
+            quod itaque accusantium minima praesentium repellendus nesciunt, cupiditate architecto! Commodi repellendus
+            quas totam aperiam voluptate at aspernatur ex tenetur. Odit vero iste illum autem beatae eveniet aliquam
+            perspiciatis, impedit accusantium ipsum in! Molestias sed et nulla eaque voluptas quibusdam amet deleniti
+            quidem, id aliquid tempora fugiat fugit voluptatum, autem cum quo numquam hic, error odio sunt facilis animi
+            voluptate. Impedit, accusantium! Expedita officiis repudiandae adipisci deleniti, enim ad quam sit ab
+            repellendus consequatur cupiditate suscipit iusto iste blanditiis perferendis vero magni quae totam numquam
+            porro unde reprehenderit atque earum? Earum ea, quam laboriosam ipsam, magnam itaque fugit soluta vero
+            expedita accusantium consequuntur, aliquam est consectetur numquam eius. Velit obcaecati, ratione iste
+            dolorem nulla vel voluptas atque qui incidunt ab reprehenderit, blanditiis temporibus perspiciatis est
+            molestiae harum soluta quod praesentium itaque facilis iure magni at eligendi exercitationem. Aliquam
+            exercitationem pariatur in doloremque quasi maxime, harum dolorum praesentium et corporis commodi,
+            repudiandae recusandae quae perferendis eius. Necessitatibus, iure voluptatem.</p>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+
+        $("#slide1").fadeIn(1000);
+        $("#slide1").fadeOut(6000);
+
+        $("#slide2").fadeIn(8000);
+        $("#slide2").fadeOut(7000);
+
+        $("#slide3").fadeIn(18000);
+        $("#slide3").fadeOut(7000);
+        
+        $("#slide4").fadeIn(24000);
+        $("#slide4").fadeOut(7000);
+        
+        $("#slide5").fadeIn(30000);
+        $("#slide5").fadeOut(7000);
+        
+        $("#slide6").fadeIn(19000);
+        //$("#slide6").fadeOut(7500);//
+        
+       
+    });
+        // --------------//
+
+        $("#btn1").click(function () {
+          $("#slide2").hide();
+          $("#slide3").hide();
+          $("#slide4").hide();
+          $("#slide5").hide();
+          $("#slide6").hide();
+          $("#slide1").show();
+          
+        });
+
+        $("#btn2").click(function () {
+          $("#slide1").hide();
+          $("#slide3").hide();
+          $("#slide4").hide();
+          $("#slide5").hide();
+          $("#slide6").hide();
+          $("#slide2").show();
+          
+        });
+        $("#btn3").click(function () {
+          $("#slide1").hide();
+          $("#slide2").hide();
+          $("#slide4").hide();
+          $("#slide5").hide();
+          $("#slide6").hide();
+          $("#slide3").show();
+          
+        });
+        $("#btn4").click(function () {
+          $("#slide1").hide();
+          $("#slide2").hide();
+          $("#slide3").hide();
+          $("#slide5").hide();
+          $("#slide6").hide();
+          $("#slide4").show();
+        });
+        $("#btn5").click(function () {
+          $("#slide1").hide();
+          $("#slide2").hide();
+          $("#slide3").hide();
+          $("#slide4").hide();
+          $("#slide6").hide();
+          $("#slide5").show();
+        });
+        $("#btn6").click(function () {
+          $("#slide1").hide();
+          $("#slide2").hide();
+          $("#slide3").hide();
+          $("#slide4").hide();
+          $("#slide5").hide();
+          $("#slide6").show();
+        });
+
+    </script>
+</body>
+
+</html>
